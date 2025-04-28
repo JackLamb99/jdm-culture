@@ -1,17 +1,12 @@
 /* Google Fonts Import - Russo One & Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap');
 
-/* General Reset */
+/* General Styling */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Body Styling */
-
-body {
     font-family: roboto, sans-serif;
     background-color: #F5EDE5;
     color: #36454F;
@@ -23,7 +18,6 @@ body {
     background: #F5EDE5;
     padding: 0 10px 0;
     text-align: center;
-    z-index: 1030;
 }
 
 .navbar-brand img {
@@ -31,7 +25,6 @@ body {
     width: auto;
 }
 
-/* Custom Navbar Toggler */
 .custom-toggler {
     border: none !important;
 }
@@ -40,14 +33,12 @@ body {
     display: none;
 }
 
-/* Removes bars icon when navbar is expanded */
 .navbar-toggler[aria-expanded="true"] .toggler-bars {
-    display: none;
+    display: none; /* Removes bars icon when navbar is expanded */
 }
 
-/* Displays close icon when navbar is expanded */
 .navbar-toggler[aria-expanded="true"] .toggler-close {
-    display: inline-block;
+    display: inline-block; /* Displays close icon when navbar is expanded */
 }
 
 .custom-toggler i {
@@ -59,6 +50,18 @@ body {
     padding-left: 10px;
 }
 
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.active i {
+    color: #2F3061;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:hover i {
+    color: #5E5FA9;
+    font-weight: bold;
+}
+
 /* Index Main Section */
 
 .hero-section img {
@@ -68,16 +71,32 @@ body {
     margin-top: 86px; /* Adjusted for fixed navbar */
 }
 
+.index-main .blockquote {
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.blockquote-footer {
+    margin-top: unset !important; /* Removes deault margin from the footer of the blockquote */
+}
+
+.cta-buttons .btn {
+    font-weight: bold;
+    font-size: 1.75rem;
+    border-radius: 10px;
+    background-color: #2F3061;
+    color: #F5EDE5;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #5E5FA9;
+    color: #F5EDE5;
+}
+
 #testing-main1 {
     width: 100%;
     height: 400px;
     background-color: #2F3061;
-}
-
-#testing-main2 {
-    width: 100%;
-    height: 800px;
-    background-color: #DB3D44;
 }
 
 @media (max-width: 991px) {
@@ -98,7 +117,7 @@ body {
 
     .navbar-nav .nav-item {
         text-align: left;
-        padding-left: 0; /* Removes extra padding */
+        padding-left: 0; /* Removes added padding */
     }
 
     .navbar-nav .nav-link {
@@ -127,5 +146,13 @@ body {
 
     .hero-section img {
         margin-top: 61px;
+    }
+
+    .index-main .blockquote {
+        font-size: 1.25rem;
+    }
+
+    .cta-buttons .btn {
+        font-size: 1.25rem;
     }
 }
