@@ -20,7 +20,49 @@
         <link rel="manifest" href="assets/favicon/site.webmanifest">
         <!-- Stylesheet -->
         <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     </head>
     <body>
+        <div class="header">
+            <nav class="navbar navbar-expand-lg">
+                <!-- JDM Culture Logo Text -->
+                <a class="navbar-brand d-flex align-items-center" href="#index">
+                    <img src="assets/images/logo_text.png" alt="JDM Culture">
+                </a>
+                <!-- Navbar Toggler Button -->
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false">
+                    <!-- Bars icon when closed -->
+                    <span class="toggler-icon toggler-bars"><i class="fa-solid fa-bars"></i></span>
+                    <!-- X icon when open -->
+                    <span class="toggler-icon toggler-close"><i class="fa-solid fa-xmark"></i></span>
+                </button>
+                <!-- Navbar Menu -->
+                <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cars">Cars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="testing-main"></div>
+        <!-- Bootstrap v5.3.5 Script -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+        <!-- Font Awesome Script -->
+        <script src="https://kit.fontawesome.com/4472c95f66.js" crossorigin="anonymous"></script>
     </body>
 </html>
