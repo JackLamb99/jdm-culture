@@ -9,12 +9,22 @@
     box-sizing: border-box;
 }
 
-html,
-body,
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 section {
     font-family: 'Roboto', sans-serif;
-    background-color: #F5EDE5;
     color: #36454F;
+    background-color: #ECDAC7;
+}
+
+main {
+    flex: 1;
+    background-color: #ECDAC7;
 }
 
 h1,
@@ -28,9 +38,13 @@ h3 {
 p {
     font-size: 1.5rem;
     text-align: center;
-    max-width: 900px;
-    /* margin-bottom: unset !important; */
+    max-width: 1200px;
     margin: 0 auto !important;
+}
+
+.quote p {
+    font-style: italic;
+    max-width: 800px;
 }
 
 .quote-footer {
@@ -41,7 +55,7 @@ p {
 /* Header */
 
 .header {
-    background: #F5EDE5;
+    background: #e7ceb3;
     padding: 0 10px 0;
     text-align: center;
 }
@@ -78,7 +92,7 @@ p {
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.active i {
-    color: #2F3061;
+    color: #2F3061 !important;
     font-weight: bold;
 }
 
@@ -123,7 +137,7 @@ p {
 .timeline .container {
     position: relative;
     width: 50%;
-    margin: 0 !important;
+    margin: 0;
 }
 
 .timeline-date {
@@ -151,9 +165,13 @@ p {
 }
 
 .timeline .text-box {
-    padding: 40px;
+    padding: 0 40px;
     position: relative;
     border-radius: 6px;
+}
+
+.first-text-box {
+    padding-top: 0 !important;
 }
 
 .left-container {
@@ -164,13 +182,17 @@ p {
     left: 50%;
 }
 
+.raised-container {
+    margin-bottom: -50px !important;
+}
+
 .timeline::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 10px;
-    height: 80%;
+    height: 100%;
     background: #2F3061;
-    top: 10%;
+    top: 0;
     left: 50%;
     margin-left: -5px;
 }
@@ -286,8 +308,6 @@ p {
 
     .timeline::after {
         left: 27px;
-        height: 100%;
-        top: 5px;
     }
     
     .timeline .container {
@@ -319,8 +339,12 @@ p {
         left: 0;
     }
 
+    .raised-container {
+        margin-bottom: unset !important;
+    }
+
     .timeline .text-box {
-        padding: 10px;
+        padding: 30px 10px 0;
     }
 
     /* Footer */
