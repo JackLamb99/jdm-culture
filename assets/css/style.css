@@ -9,11 +9,33 @@
     box-sizing: border-box;
 }
 
+html,
 body,
 section {
-    font-family: roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #F5EDE5;
     color: #36454F;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Russo One', sans-serif;
+    color: #DB3D44 !important;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 900px;
+    /* margin-bottom: unset !important; */
+    margin: 0 auto !important;
+}
+
+.quote-footer {
+    color: #485c69;
+    font-size: 1.3rem;
 }
 
 /* Header */
@@ -66,23 +88,6 @@ section {
     font-weight: bold;
 }
 
-/* Multi-page Stylings */
-
-/* .index-main .blockquote,
-.about-quote .blockquote {
-    font-style: italic;
-    font-size: 1.5rem;
-} */
-
-.blockquote {
-    font-style: italic;
-    font-size: 1.5rem !important; 
-}
-
-.blockquote-footer {
-    margin-top: unset !important; /* Removes deault margin from the footer of the blockquote */
-}
-
 /* Index Main Content */
 
 .hero-section img {
@@ -117,6 +122,10 @@ section {
     font-size: 3rem;
 }
 
+.footer-section p {
+    font-size: 1rem;
+}
+
 .footer-section a {
     color: #F5EDE5;
     text-decoration: none;
@@ -129,6 +138,16 @@ section {
 }
 
 @media (max-width: 991px) {
+    /* General Styling */
+
+    p {
+        font-size: 1.25rem;
+    }
+
+    .quote-footer {
+        font-size: 1.1rem;
+    }
+
     /* Header Section */
 
     .navbar-brand img {
@@ -160,6 +179,18 @@ section {
 }
 
 @media (max-width: 576px) {
+    /* General Styling */
+
+    p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .quote-footer {
+        color: #485c69;
+        font-size: 0.85rem;
+    }
+
     /* Header Section */
 
     .navbar-brand img {
@@ -177,7 +208,7 @@ section {
     }
 
     .index-main .blockquote {
-        font-size: 1.25rem !important;
+        font-size: 1rem !important;
     }
 
     .cta-buttons .btn {
