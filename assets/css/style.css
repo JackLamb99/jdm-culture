@@ -197,6 +197,16 @@ p {
     margin-left: -5px;
 }
 
+.media-section p {
+    text-align: center;
+    max-width: 1000px;
+}
+
+.media-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 /* Footer */
 
 .footer-section,
