@@ -66,6 +66,23 @@ section {
     font-weight: bold;
 }
 
+/* Multi-page Stylings */
+
+/* .index-main .blockquote,
+.about-quote .blockquote {
+    font-style: italic;
+    font-size: 1.5rem;
+} */
+
+.blockquote {
+    font-style: italic;
+    font-size: 1.5rem !important; 
+}
+
+.blockquote-footer {
+    margin-top: unset !important; /* Removes deault margin from the footer of the blockquote */
+}
+
 /* Index Main Content */
 
 .hero-section img {
@@ -73,15 +90,6 @@ section {
     width: 100%;
     height: auto;
     margin-top: 86px; /* Adjusted for fixed navbar */
-}
-
-.index-main .blockquote {
-    font-style: italic;
-    font-size: 1.5rem;
-}
-
-.blockquote-footer {
-    margin-top: unset !important; /* Removes deault margin from the footer of the blockquote */
 }
 
 .cta-buttons .btn {
@@ -169,7 +177,7 @@ section {
     }
 
     .index-main .blockquote {
-        font-size: 1.25rem;
+        font-size: 1.25rem !important;
     }
 
     .cta-buttons .btn {
