@@ -52,6 +52,33 @@ p {
     font-size: 1.3rem;
 }
 
+/* Section Divider */
+
+.section-divider {
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.divider-icon {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.divider-line {
+    height: 4px;
+    background-color: #2F3061;
+    border-radius: 2px;
+    flex-grow: 1;
+}
+
+
 /* General Header */
 
 .header {
@@ -332,6 +359,13 @@ p {
     .quote-footer {
         color: #485c69;
         font-size: 0.85rem;
+    }
+
+    /* Section Divider */
+
+    .section-divider {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     /* General Header */
