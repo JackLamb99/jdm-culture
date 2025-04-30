@@ -52,6 +52,10 @@ p {
     font-size: 1.3rem;
 }
 
+.large-heading {
+    font-size: 4rem;
+}
+
 /* Section Divider */
 
 .section-divider {
@@ -296,6 +300,26 @@ p {
     color: #DB3D44;
 }
 
+/* 404 Page */
+
+.error-container {
+    min-height: 100vh;
+}
+
+.error-container .btn {
+    font-weight: bold;
+    font-size: 1.75rem;
+    width: 200px;
+    border-radius: 50px;
+    background-color: #2F3061;
+    color: #F5EDE5;
+}
+
+.error-container .btn:hover {
+    background-color: #5E5FA9;
+    color: #F5EDE5;
+}
+
 @media (max-width: 991px) {
     /* General Styling */
 
@@ -359,6 +383,10 @@ p {
     .quote-footer {
         color: #485c69;
         font-size: 0.85rem;
+    }
+
+    .large-heading {
+        font-size: 2rem;
     }
 
     /* Section Divider */
@@ -451,5 +479,11 @@ p {
 
     .footer-section i {
         font-size: 2rem;
+    }
+
+    /* 404 Page */
+    
+    .error-container .btn {
+        font-size: 1rem;
     }
 }
