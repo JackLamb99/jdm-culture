@@ -90,6 +90,10 @@ p {
     padding-left: 10px;
 }
 
+.navbar-nav .nav-link {
+    font-size: 1.5rem;
+}
+
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.active i {
     color: #2F3061 !important;
@@ -197,6 +201,17 @@ p {
     margin-left: -5px;
 }
 
+.legend-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.legend-img {
+    max-width: 300px;
+    /* border-radius: 30px 0 0 30px; */
+    border-radius: 50%;
+}
+
 .media-section p {
     text-align: center;
     max-width: 1000px;
@@ -260,7 +275,7 @@ p {
     }
 
     .navbar-nav .nav-link {
-        font-size: 1.1rem;
+        font-size: 1.25rem;
     }
 
     /* Index Main Section */
@@ -355,6 +370,10 @@ p {
 
     .timeline .text-box {
         padding: 30px 10px 0;
+    }
+
+    .legend-img {
+        border-radius: 50%;
     }
 
     /* Footer */
