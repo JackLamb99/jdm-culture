@@ -49,7 +49,7 @@ p {
 }
 
 .quote-footer {
-    color: #485c69;
+    color: #485C69;
     font-size: 1.3rem;
 }
 
@@ -97,19 +97,19 @@ p {
     font-size: 1rem;
     border-radius: 50px;
     background-color: #2F3061;
-    color: #F5EDE5;
+    color: #ECDAC7;
 }
 
 .section-divider .btn:hover {
     background-color: #5E5FA9;
-    color: #F5EDE5;
+    color: #ECDAC7;
 }
 
 
 /* General Header */
 
 .header {
-    background: #e7ceb3;
+    background: #E7CEB3;
     padding: 0 10px 0;
     text-align: center;
 }
@@ -174,12 +174,12 @@ p {
     font-size: 1.75rem;
     border-radius: 50px;
     background-color: #2F3061;
-    color: #F5EDE5;
+    color: #ECDAC7;
 }
 
 .cta-buttons .btn:hover {
     background-color: #5E5FA9;
-    color: #F5EDE5;
+    color: #ECDAC7;
 }
 
 /* About Main */
@@ -216,7 +216,7 @@ p {
 }
 
 .timeline-date p {
-    color: #F5EDE5;
+    color: #ECDAC7;
     font-size: 1.25rem;
 }
 
@@ -273,6 +273,70 @@ p {
     margin: 0 auto;
 }
 
+/* Cars Main */
+
+.car-tiles-container {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.car-tile {
+    background-color: #2F3061;
+    color: #ECDAC7;
+    font-size: 1.25rem;
+    border-radius: 20px;
+}
+
+.car-tile:hover {
+    background-color: #5E5FA9;
+}
+
+.modal-header {
+    background-color: #E7CEB3;
+}
+
+.modal-body {
+    background-color: #ECDAC7;
+    color: #36454F;
+}
+
+.list-unstyled,
+.modal-body table {
+    font-size: 1.25rem;
+}
+
+.list-unstyled i {
+    color: #2F3061;
+}
+
+.specs-table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.specs-table th {
+    background-color: #2F3061;
+    color: #ECDAC7;
+    padding: 1rem;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.specs-table td {
+    background-color: #ACA9BB;
+    padding: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.specs-table td:nth-child(odd) {
+    font-weight: bold;
+}
+
+.specs-table tr:nth-child(even) td {
+    background-color: #D1CFDB;
+}
+
 /* Contact Main */
 
 .contact-container {
@@ -288,12 +352,12 @@ p {
     font-weight: bold;
     border-radius: 50px;
     background-color: #2F3061;
-    color: #F5EDE5;
+    color: #ECDAC7;
 }
 
 .contact-form .btn:hover {
     background-color: #5E5FA9;
-    color: #F5EDE5;
+    color: #ECDAC7;
 }
 
 /* General Footer */
@@ -301,7 +365,7 @@ p {
 .footer-section,
 .footer-section .container {
     background-color: #36454F;
-    color: #F5EDE5;
+    color: #ECDAC7;
 }
 
 .footer-section i {
@@ -313,7 +377,7 @@ p {
 }
 
 .footer-section a {
-    color: #F5EDE5;
+    color: #ECDAC7;
     text-decoration: none;
     font-weight: bold;
     font-style: italic
@@ -335,12 +399,18 @@ p {
     width: 200px;
     border-radius: 50px;
     background-color: #2F3061;
-    color: #F5EDE5;
+    color: #ECDAC7;
 }
 
 .error-container .btn:hover {
     background-color: #5E5FA9;
-    color: #F5EDE5;
+    color: #ECDAC7;
+}
+
+@media (max-width: 1199px) { /* Controls car tiles width before bootstrap xl breakpoint */
+    .car-tiles-container {
+        max-width: 800px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -382,6 +452,21 @@ p {
         margin-top: 71px;
     }
 
+    /* Cars Main */
+
+    .car-tile {
+        font-size: 1.25rem;
+    }
+
+    .specs-table th {
+        font-size: 1.25rem;
+        padding: 0.75rem;
+    }
+    
+    .specs-table td {
+        font-size: 1rem;
+    }
+
     /* Contact Main */
 
     .contact-container {
@@ -399,6 +484,12 @@ p {
     }
 }
 
+@media (max-width: 767px) { /* Controls car tiles width before bootstrap md breakpoint */
+    .car-tiles-container {
+        max-width: 500px;
+    }
+}
+
 @media (max-width: 576px) {
     /* General Styling */
 
@@ -412,7 +503,7 @@ p {
     }
 
     .quote-footer {
-        color: #485c69;
+        color: #485C69;
         font-size: 0.85rem;
     }
 
@@ -497,6 +588,22 @@ p {
     .legend-img {
         border-radius: 50%;
         max-width: 200px !important;
+    }
+
+    /* Cars Main */
+
+    .car-tile {
+        font-size: 1rem;
+    }
+
+    .specs-table th {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .specs-table td {
+        font-size: 0.75rem;
+        padding: 0.5rem;
     }
 
     /* Contact Main */
