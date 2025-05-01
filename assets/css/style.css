@@ -14,6 +14,7 @@ html, body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    scroll-padding-top: 86px; /* Allows section divider navigation to account for fixed navbar */
 }
 
 section {
@@ -80,6 +81,28 @@ p {
     background-color: #2F3061;
     border-radius: 2px;
     flex-grow: 1;
+}
+
+.section-divider a {
+    font-size: 25px;
+    color: #2F3061;
+}
+
+.section-divider a:hover {
+    color: #5E5FA9;
+}
+
+.section-divider .btn {
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 50px;
+    background-color: #2F3061;
+    color: #F5EDE5;
+}
+
+.section-divider .btn:hover {
+    background-color: #5E5FA9;
+    color: #F5EDE5;
 }
 
 
@@ -323,6 +346,10 @@ p {
 @media (max-width: 991px) {
     /* General Styling */
 
+    html {
+        scroll-padding-top: 71px; /* Allows section divider navigation to account for fixed navbar */
+    }
+
     p {
         font-size: 1.25rem;
     }
@@ -374,6 +401,10 @@ p {
 
 @media (max-width: 576px) {
     /* General Styling */
+
+    html {
+        scroll-padding-top: 61px; /* Allows section divider navigation to account for fixed navbar */
+    }
 
     p {
         font-size: 1rem;
