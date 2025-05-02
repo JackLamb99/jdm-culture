@@ -285,6 +285,12 @@ p {
     color: #ECDAC7;
     font-size: 1.25rem;
     border-radius: 20px;
+    width: 100%;
+    height: 150px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .car-tile:hover {
