@@ -388,7 +388,7 @@ The custom 404 page was tested by visiting an invalid URL to confirm that it loa
 
 #### 404 Page CTA Buttons
 
-Three call-to-action buttons are present on the Thank You page and were tested to ensure they correctly redirected users to the appropriate page.
+Four call-to-action buttons are present on the Thank You page and were tested to ensure they correctly redirected users to the appropriate page.
 
 | Button | Expected | Actual |
 | - | - | - |
@@ -545,3 +545,39 @@ The following technologies were used in the creation of the website:
 - [Balsamiq](https://balsamiq.com/wireframes/desktop/) - Wireframes were created using the Balsamiq desktop application.
 - [Image Resizer](https://imageresizer.com/) - Used to resize images to optimise loading times and overall performance.
 - [Free Convert](https://www.freeconvert.com/) - Used to convert all images to WEBP format for improved compression without quality loss.
+
+## Deployment
+
+### Version Control
+
+The project was developed using the VS Code desktop application and pushed to the remote repository, [jdm-culture](https://github.com/JackLamb99/jdm-culture), on GitHub.
+
+The following git commands were used throughout its creation to push code to the remote repository:
+
+- `git add [file]` or `git add .` - This command was used to add the file(s) to the staging area before they were committed.
+- `git commit –m "[commit message]"` - This command was used to commit changes to the local repository queue.
+- `git push` - This command was used to push all committed code to the remote repository on GitHub.
+
+### Deployment to GitHub Pages
+
+The site was deployed to GitHub Pages, the steps to deploy are as follows:
+
+1. In your GitHub repository, navigate to the Settings tab.
+2. In the left-hand menu, click on Pages.
+3. Under the Build and deployment section, select Deploy from a branch.
+4. In the Branch dropdown, choose main (or the appropriate branch) and set the folder to /root if required.
+5. Click Save.
+6. After a few moments, a live link to the deployed site will appear at the top of the page.
+<br>*Note: You may need to refresh the page to see the link after saving.*
+
+The live link can be found here - https://jacklamb99.github.io/jdm-culture/
+
+### Cloning the Repository Locally
+
+1. Open the GitHub repository you want to clone.
+2. Click the Code button (green dropdown near the top right).
+3. Under the HTTPS tab, click the copy icon next to the repository URL.
+4. Open your IDE or terminal.
+5. In the terminal, type the following command, replacing copied-url with the one you copied:
+`git clone copied-url`
+<br>*Note: Git must be installed on your system for this step to work. You can download it [here](https://git-scm.com/downloads).*
