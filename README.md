@@ -39,7 +39,7 @@ Below are the user stories that guided the development process, along with expla
 
     <details><summary>CTA Buttons</summary>
 
-    ![Call-to-action Buttons](docs/images/feature-cta-btns.png)
+    ![CTA Buttons](docs/images/feature-cta-btns.png)
 
     </details>
 
@@ -55,7 +55,7 @@ Below are the user stories that guided the development process, along with expla
 
     </details>
 
-    The *About* page content opens with a clear *What is JDM* section that introduces the concept in simple terms. It's followed by a breakdown of key aspects like tuning, street culture, racing, and styling. This gives users an easy, accessible overview without needing any prior knowledge.
+    The *About* page begins with a clear *What is JDM?* section that introduces the concept in simple terms. It's followed by a breakdown of key aspects like tuning, street culture, racing, and styling. This gives users an easy, accessible overview without needing any prior knowledge.
 
 2. "As a site user, I want to explore content about the history of JDM culture and the people who helped shape it, so I can gain a greater appreciation for how it became what it is today."
 
@@ -193,20 +193,20 @@ The colour scheme is inspired by vintage Japanese posters and car manuals, reinf
     - Red conveys excitement and speed — key elements of car culture.
     - Indigo represents technology and reliability.
     - Grey tones evoke modernity and balance the more vibrant accents.
-- Focus: Accent colours are strategically used for CTA buttons, hover states, and navigation to guide the user’s attention.
+- Focus: Accent colours are strategically used for call-to-action buttons, hover states, and navigation to guide the user’s attention.
 
 ### Imagery
 
 All images aim to focus on JDM cars in real-world scenes to reflect the raw, energetic feel of JDM culture.
 
-Some images were sourced from multiple sources due to limited availability of high-quality contextual imagery from free image providers. JDM Culture was made for an education project with no commerical value and all image credits are listed below.
+Some images were sourced from multiple sources due to limited availability of high-quality contextual imagery from free image providers. JDM Culture was created as part of an educational project with no commercial value. All image sources are credited below.
 
 ### Typography
 
 The site uses two fonts from Google Fonts to support both clarity and aesthetic impact:
 
-- Russo One for headings: A bold, blocky display typeface that mirrors the strong, angular lines of classic JDM car design.
-- Roboto for body text: A clean, modern sans-serif font optimised for readability on screens of all sizes.
+- **Russo One** for headings: A bold, blocky display typeface that mirrors the strong, angular lines of classic JDM car design.
+- **Roboto** for body text: A clean, modern sans-serif font optimised for readability on screens of all sizes.
 
 This combination delivers contrast between structure and content, while maintaining a cohesive style across the site.
 
@@ -234,9 +234,9 @@ UI choices were made to enhance usability without distracting from content:
 
     </details>
 
-    <details><summary>Cars Tiles Hover Effect</summary>
+    <details><summary>Car Tiles Hover Effect</summary>
 
-    ![Cars Tiles Hover Effect](docs/images/ui-car-tiles.png)
+    ![Car Tiles Hover Effect](docs/images/ui-car-tiles.png)
 
     </details>
 
@@ -246,6 +246,23 @@ UI choices were made to enhance usability without distracting from content:
 
     </details>
 
-- Modals: Car details are presented in Bootstrap-powered modals to keep users on the same page and reduce page load friction.
+- Car Modals: Car details open in Bootstrap-powered modals, allowing users to stay on the same page and view content without additional page loads.
 - Consistent Layouts: Spacing, font sizing, and padding remain consistent between sections across devices.
 - Responsive Grids: Flexible layouts adapt seamlessly from desktop to mobile, maintaining hierarchy and clarity.
+
+## Technologies
+
+The following technologies were used in the creation of the website:
+
+- HTML5 - The structure of the website was built using semantic HTML.
+- CSS3 - Custom CSS was used to style all pages and ensure consistent design.
+- [Bootstrap 5](https://getbootstrap.com/) - Used for responsive layout, grid system, modals, and image carousels.
+- [Visual Studio Code](https://code.visualstudio.com/) - The project was developed using the VS Code desktop application.
+- [GitHub](https://github.com/) - The source code is hosted on GitHub and deployed using GitHub Pages.
+- Git - Used for version control, including commits and pushing code throughout the development process.
+- [Google Fonts](https://fonts.google.com/) - Used to import the 'Russo One' and 'Roboto' fonts for headings and body text.
+- [Favicon.io](https://favicon.io/) - Used to convert and import the custom JDM Culture logo as a favicon.
+- [Font Awesome](https://fontawesome.com/) - Used to find and import icons used throughout the website.
+- [Balsamiq](https://balsamiq.com/wireframes/desktop/) - Wireframes were created using the Balsamiq desktop application.
+- [Image Resizer](https://imageresizer.com/) - Used to resize images to optimise loading times and overall performance.
+- [Free Convert](https://www.freeconvert.com/) - Used to convert all images to WEBP format for improved compression without quality loss.
