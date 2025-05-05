@@ -614,13 +614,20 @@ The live link can be found here - https://jacklamb99.github.io/jdm-culture/
 
 ## Credits
 
-### Tutorials
+### Tutorials and Guides
 
-[Timeline Tutorial Video](https://youtu.be/t5AE66WgQD0?si=dCdXwgxVZEnqvu0_) - This video was followed but adapted and customised to make the responsive timeline used in the *History of JDM* section.
+- This [Timeline Tutorial Video](https://youtu.be/t5AE66WgQD0?si=dCdXwgxVZEnqvu0_) was followed but adapted and customised to make the responsive timeline used in the *History of JDM* section.
+- [Bootstrap's Modal Documentation](https://getbootstrap.com/docs/4.0/components/modal/) was followed when building the modal structures on the *Cars* page.
+- [Bootstrap's Carousel Documentation](https://getbootstrap.com/docs/4.0/components/carousel/) was followed when building the image carousel structures within the modals on the *Cars* page.
 
 ### Code Used
 
-`<iframe>` code for videos in the *Iconic Media Representation* section copied from YouTube's 'Embed Video' tool.
+- `<iframe>` code for videos in the *Iconic Media Representation* section was directly copied using YouTube's 'Embed Video' tool.
+    <details><summary>YouTube's Embed Video Tool Example</summary>
+
+    ![YouTube's Embed Video Tool Example](docs/images/youtube-embed-tool.png)
+
+    </details>
 
 ### Media
 
