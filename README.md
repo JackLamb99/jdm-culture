@@ -12,7 +12,7 @@ The aim of this website was to provide an informative, visually engaging platfor
 
 Below are the user stories that guided the development process, along with explanations and visual examples of how each one was addressed.
 
-#### First-Time Visitor Goals
+### First-Time Visitor Goals
 
 1. "As a first-time visitor, I want to see visually striking images of iconic Japanese cars, so I can immediately connect with the site’s theme and vibe."
 
@@ -36,7 +36,8 @@ Below are the user stories that guided the development process, along with expla
     ![Navbar - Mobile](docs/images/feature-navbar-mobile.png)
 
     </details>
-    <details><summary>Call-to-action Buttons</summary>
+
+    <details><summary>CTA Buttons</summary>
 
     ![Call-to-action Buttons](docs/images/feature-cta-btns.png)
 
@@ -44,7 +45,7 @@ Below are the user stories that guided the development process, along with expla
 
     The site features a clear, consistent navigation bar that's easy to spot and use. On smaller screens, it collapses into a responsive hamburger menu for smooth mobile navigation. Prominent call-to-action buttons on the landing page guide users to explore key content right away.
 
-#### Site User Goals
+### Site User Goals
 
 1. "As a site user, I want to explore content about the meaning and key aspects of JDM culture, so I can learn the basics without needing prior knowledge."
 
@@ -63,6 +64,7 @@ Below are the user stories that guided the development process, along with expla
     ![The History of JDM](docs/images/feature-history.png)
 
     </details>
+
     <details><summary>Legendary Names</summary>
 
     ![Legendary Names](docs/images/feature-legends.png)
@@ -101,7 +103,7 @@ Below are the user stories that guided the development process, along with expla
 
     The site footer appears on every page and includes clearly visible social media icons. These provide easy access to the site's (hypothetical) social channels, helping users stay connected and follow updates.
 
-#### Frequent User Goals
+### Frequent User Goals
 
 1. "As a frequent user, I want to explore details and images about different cars, so I can deepen my knowledge of specific JDM vehicles I like."
 
@@ -110,6 +112,7 @@ Below are the user stories that guided the development process, along with expla
     ![Car Tiles](docs/images/feature-car-tiles.png)
 
     </details>
+
     <details><summary>Car Modal</summary>
 
     ![Car Modal](docs/images/feature-car-modal.png)
@@ -135,6 +138,7 @@ Below are the user stories that guided the development process, along with expla
     ![Contact Form](docs/images/feature-contact.png)
 
     </details>
+
     <details><summary>Thank You Page</summary>
 
     ![Thank You Page](docs/images/feature-thank-you.png)
@@ -152,3 +156,96 @@ Below are the user stories that guided the development process, along with expla
     </details>
 
     The whole site is fully responsive, with layouts and content optimised for desktop, tablet, and mobile devices. This ensures a smooth, consistent browsing experience on the go, with no loss in readability or usability.
+
+## Design
+
+### Wireframes
+
+The initial wireframes guided the site’s structure and layout across desktop and mobile devices.
+
+<details><summary>Home Page Wireframe</summary>
+
+![Home Page Wireframe](docs/images/wireframe-home.png)
+
+</details>
+
+<details><summary>About Page Wireframe</summary>
+
+![About Page Wireframe](docs/images/wireframe-about.png)
+
+</details>
+
+<details><summary>Cars Page Wireframe</summary>
+
+![Cars Page Wireframe](docs/images/wireframe-cars.png)
+
+</details>
+
+### Colour Palette
+
+![Colour Palette](docs/images/colour-palette.png)
+
+The colour scheme is inspired by vintage Japanese posters and car manuals, reinforcing cultural authenticity. A deep indigo and vivid red establish strong visual hierarchy, helping users focus on key elements, while muted tones and the 'linen' background colour reduce eye strain for longer reading sessions.
+
+- Contrast and Legibility: The design uses light-on-dark and dark-on-light combinations that meet WCAG contrast guidelines for accessibility.
+- Consistency: A limited but consistent palette is used across the site to reinforce a clear visual identity.
+- Emotional Impact:
+    - Red conveys excitement and speed — key elements of car culture.
+    - Indigo represents technology and reliability.
+    - Grey tones evoke modernity and balance the more vibrant accents.
+- Focus: Accent colours are strategically used for CTA buttons, hover states, and navigation to guide the user’s attention.
+
+### Imagery
+
+All images aim to focus on JDM cars in real-world scenes to reflect the raw, energetic feel of JDM culture.
+
+Some images were sourced from multiple sources due to limited availability of high-quality contextual imagery from free image providers. JDM Culture was made for an education project with no commerical value and all image credits are listed below.
+
+### Typography
+
+The site uses two fonts from Google Fonts to support both clarity and aesthetic impact:
+
+- Russo One for headings: A bold, blocky display typeface that mirrors the strong, angular lines of classic JDM car design.
+- Roboto for body text: A clean, modern sans-serif font optimised for readability on screens of all sizes.
+
+This combination delivers contrast between structure and content, while maintaining a cohesive style across the site.
+
+### User Interface
+
+UI choices were made to enhance usability without distracting from content:
+
+- Hover Effects: Interactive elements such as buttons, navigation links, and car tiles change shade on hover to give clear feedback.
+
+    <details><summary>Navbar Hover Effect</summary>
+
+    ![Navbar Hover Effect](docs/images/ui-navbar.png)
+
+    </details>
+
+    <details><summary>CTA Button Hover Effect</summary>
+
+    ![CTA Button Hover Effect](docs/images/ui-cta-btns.png)
+
+    </details>
+
+    <details><summary>Section Divider Hover Effect</summary>
+
+    ![Section Divider Hover Effect](docs/images/ui-divider.png)
+
+    </details>
+
+    <details><summary>Cars Tiles Hover Effect</summary>
+
+    ![Cars Tiles Hover Effect](docs/images/ui-car-tiles.png)
+
+    </details>
+
+    <details><summary>Social Links Hover Effect</summary>
+
+    ![Social Links Hover Effect](docs/images/ui-social-links.png)
+
+    </details>
+
+- Modals: Car details are presented in Bootstrap-powered modals to keep users on the same page and reduce page load friction.
+- Consistent Layouts: Spacing, font sizing, and padding remain consistent between sections across devices.
+- Responsive Grids: Flexible layouts adapt seamlessly from desktop to mobile, maintaining hierarchy and clarity.
