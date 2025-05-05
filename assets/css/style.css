@@ -284,6 +284,7 @@ p {
     background-color: #2F3061;
     color: #ECDAC7;
     font-size: 1.25rem;
+    text-align: center;
     border-radius: 20px;
     width: 100%;
     height: 200px;
@@ -295,6 +296,13 @@ p {
 
 .car-tile:hover {
     background-color: #5E5FA9;
+}
+
+.car-tile img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
 }
 
 .modal-header {
