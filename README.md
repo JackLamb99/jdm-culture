@@ -163,9 +163,9 @@ Below are the user stories that guided the development process, along with expla
 
 The initial wireframes guided the site’s structure and layout across desktop and mobile devices.
 
-<details><summary>Home Page Wireframe</summary>
+<details><summary>Index Page Wireframe</summary>
 
-![Home Page Wireframe](docs/images/wireframe-home.png)
+![Index Page Wireframe](docs/images/wireframe-index.png)
 
 </details>
 
@@ -249,6 +249,285 @@ UI choices were made to enhance usability without distracting from content:
 - Car Modals: Car details open in Bootstrap-powered modals, allowing users to stay on the same page and view content without additional page loads.
 - Consistent Layouts: Spacing, font sizing, and padding remain consistent between sections across devices.
 - Responsive Grids: Flexible layouts adapt seamlessly from desktop to mobile, maintaining hierarchy and clarity.
+
+## Testing
+
+### Compatibility and Responsiveness
+
+All pages were tested in Google Chrome, Microsoft Edge, Mozilla Firefox, and Safari to ensure full responsiveness and compatibility with a range of screen sizes, including mobile and ultra-wide monitors. Tests were carried out in accordance with [WCAG 2.1 Reflow](https://www.w3.org/WAI/WCAG21/Understanding/reflow.html) standards.
+
+#### Steps to test:
+
+1. Open the browser and navigate to the JDM Culture website.
+2. Open developer tools (right-click then Inspect).
+3. Set the device to "Responsive" with width starting at 320px.
+4. Zoom out to 50% to view full scaling on larger resolutions.
+5. Drag the width toggle to test all breakpoints up to ultra-wide (2560px+).
+
+**Expected Result**: No horizontal scroll, no overlapping elements, and all content remains readable and visually balanced.
+
+**Actual Result**: The website responded as expected across all tested screen sizes and devices. No layout issues or scrollbars were detected.
+
+#### Devices tested:
+
+- Samsung Galaxy S20 mobile
+- Apple iPhone 12 mobile
+- Apple iPad Air tablet
+- Google Chromebook laptop
+- 1920×1080 desktop monitor
+
+### Functional Testing
+
+#### Navbar Links
+
+Testing was performed to ensure all navbar links, including the site logo, correctly redirected users to the appropriate page.
+
+| Link/Button | Expected | Actual |
+| - | - | - |
+| Logo | Navigates to the Index page | Works as expected |
+| Home | Navigates to the Index page | Works as expected |
+| About | Navigates to the About page | Works as expected |
+| Cars | Navigates to the Cars page | Works as expected |
+| Contact | Navigates to the Contact page | Works as expected |
+
+#### Footer Social Media Links
+
+All social media icons in the site footer were tested to ensure they opened the correct platforms in a new tab.
+
+| Icon | Expected Behaviour | Actual |
+| - | - | - |
+| TikTok | Opens TikTok in a new tab | Works as expected |
+| Instagram | Opens Instagram in a new tab | Works as expected |
+| Twitter | Opens Twitter in a new tab | Works as expected |
+| YouTube | Opens YouTube in a new tab | Works as expected |
+
+#### Footer GitHub Link
+
+The *JackLamb99* text in the footer was tested to ensure it links to my GitHub page and opens in a new tab.
+
+| Link | Expected Behaviour | Actual |
+| - | - | - |
+| *JackLamb99* Text | Opens https://github.com/JackLamb99 in a new tab | Works as expected |
+
+#### Index Page CTA Buttons
+
+Three call-to-action buttons are present on the Index page and were tested to ensure they correctly redirected users to the appropriate page.
+
+| Button | Expected | Actual |
+| - | - | - |
+| What is JDM? | Navigates to the About page | Works as expected |
+| Iconic Cars | Navigates to the Cars page | Works as expected |
+| Contact Us | Navigates to the Contact page | Works as expected |
+
+#### Section Divider Buttons
+
+The About page features section dividers with buttons that scroll the user to different content sections on the page.
+
+| Button | Expected Behaviour | Actual |
+| - | - | - |
+| Up Arrow | Scrolls to the previous section | Works as expected |
+| Down Arrow | Scrolls to the next section | Works as expected |
+| Back to Top | Scrolls to the top of the About page | Works as expected |
+
+#### Embedded YouTube Videos
+
+Videos embedded in the Iconic Media section were tested to confirm they allow full playback control.
+
+| Video | Expected Behaviour | Actual |
+| - | - | - |
+| The Fast and the Furious | Video plays, pauses, allows volume and fullscreen control | Works as expected |
+| 2 Fast 2 Furious | Video plays, pauses, allows volume and fullscreen control | Works as expected |
+| The Fast and the Furious: Tokyo Drift | Video plays, pauses, allows volume and fullscreen control | Works as expected |
+| Baby Driver | Video plays, pauses, allows volume and fullscreen control | Works as expected |
+| Initial D | Video plays, pauses, allows volume and fullscreen control | Works as expected |
+
+#### Car Tiles and Modals
+
+Car tiles were tested to ensure clicking them opens the corresponding modal with the correct information and allows modal closure.
+
+| Element | Expected Behaviour | Actual |
+| - | - | - |
+| Car Tile Click | Opens modal with correct name, images, description, and specs table | Works as expected |
+| Modal Close | Closes modal via "X" button or background click | Works as expected |
+
+#### Contact Form Validation
+
+Each field in the form on the Contact page was tested to ensure validation rules prevent submission with missing or invalid data.
+
+| Field | Input | Expected | Actual |
+| - | - | - | - |
+| Name | Empty | Form does not submit and error message shown | Works as expected |
+| Email | Invalid/empty | Form does not submit and error message shown | Works as expected |
+| Message | Empty | Form does not submit and error message shown | Works as expected |
+
+#### Contact Form Submission
+
+After filling in all required fields with valid data, the form was tested for proper submission and redirection.
+
+| Action | Expected Behaviour | Actual |
+| - | - | - |
+| Submit | Redirects to the Thank You page | Works as expected |
+
+#### Thank You Page CTA Buttons
+
+Three call-to-action buttons are present on the Thank You page and were tested to ensure they correctly redirected users to the appropriate page.
+
+| Button | Expected | Actual |
+| - | - | - |
+| What is JDM? | Navigates to the About page | Works as expected |
+| Iconic Cars | Navigates to the Cars page | Works as expected |
+| Contact Us | Navigates to the Contact page | Works as expected |
+
+#### 404 Page
+
+The custom 404 page was tested by visiting an invalid URL to confirm that it loads and behaves correctly.
+
+| Test | Expected Behaviour | Actual |
+| - | - | - |
+| Enter invalid URL | Displays custom 404 page | Works as expected |
+
+#### 404 Page CTA Buttons
+
+Three call-to-action buttons are present on the Thank You page and were tested to ensure they correctly redirected users to the appropriate page.
+
+| Button | Expected | Actual |
+| - | - | - |
+| Home | Navigates to the Index page | Works as expected |
+| About | Navigates to the About page | Works as expected |
+| Cars | Navigates to the Cars page | Works as expected |
+| Contact | Navigates to the Contact page | Works as expected |
+
+### Validation
+
+#### HTML
+
+No errors occurred when passing each page through the official [W3C Markup Validation Service](https://validator.w3.org/)
+
+<details><summary>Index Page Validator Results</summary>
+
+![Index Page Validator Results](docs/images/validation-index.png)
+
+</details>
+
+<details><summary>About Page Validator Results</summary>
+
+![About Page Validator Results](docs/images/validation-about.png)
+
+</details>
+
+<details><summary>Cars Page Validator Results</summary>
+
+![Cars Page Validator Results](docs/images/validation-cars.png)
+
+</details>
+
+<details><summary>Contact Page Validator Results</summary>
+
+![Contact Page Validator Results](docs/images/validation-contact.png)
+
+</details>
+
+<details><summary>Thank You Page Validator Results</summary>
+
+![Thank You Page Validator Results](docs/images/validation-thank-you.png)
+
+</details>
+
+<details><summary>404 Page Validator Results</summary>
+
+![404 Page Validator Results](docs/images/validation-404.png)
+
+</details>
+
+#### CSS
+
+No errors occurred when passing through the official [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+
+<details><summary>CSS Validator Results</summary>
+
+![CSS Validator Results](docs/images/validation-css.png)
+
+</details>
+
+### Lighthouse
+
+Lighthouse was run in Google Chrome DevTools for all pages to assess Performance, Accessibility, Best Practices, and SEO.
+
+<details><summary>Index Page Lighthouse Results</summary>
+
+![Index Page Lighthouse Results](docs/images/lighthouse-index.png)
+
+</details>
+
+<details><summary>About Page Lighthouse Results</summary>
+
+![About Page Lighthouse Results](docs/images/lighthouse-about.png)
+
+</details>
+
+<details><summary>Cars Page Lighthouse Results</summary>
+
+![Cars Page Lighthouse Results](docs/images/lighthouse-cars.png)
+
+</details>
+
+<details><summary>Contact Page Lighthouse Results</summary>
+
+![Contact Page Lighthouse Results](docs/images/lighthouse-contact.png)
+
+</details>
+
+<details><summary>Thank You Page Lighthouse Results</summary>
+
+![Thank You Page Lighthouse Results](docs/images/lighthouse-thank-you.png)
+
+</details>
+
+<details><summary>404 Page Lighthouse Results</summary>
+
+![404 Page Lighthouse Results](docs/images/lighthouse-404.png)
+
+</details>
+
+### Accessibility
+
+[Wave Accessibility](https://wave.webaim.org/) tool was used to ensure all pages met the needs for any screen readers or accessibility aids for visually impaired users.
+
+<details><summary>Index Page Wave Results</summary>
+
+![Index Page Wave Results](docs/images/wave-index.png)
+
+</details>
+
+<details><summary>About Page Wave Results</summary>
+
+![About Page Wave Results](docs/images/wave-about.png)
+
+</details>
+
+<details><summary>Cars Page Wave Results</summary>
+
+![Cars Page Wave Results](docs/images/wave-cars.png)
+
+</details>
+
+<details><summary>Contact Page Wave Results</summary>
+
+![Contact Page Wave Results](docs/images/wave-contact.png)
+
+</details>
+
+<details><summary>Thank You Page Wave Results</summary>
+
+![Thank You Page Wave Results](docs/images/wave-thank-you.png)
+
+</details>
+
+<details><summary>404 Page Wave Results</summary>
+
+![404 Page Wave Results](docs/images/wave-404.png)
+
+</details>
 
 ## Technologies
 
