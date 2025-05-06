@@ -564,8 +564,8 @@ Lighthouse was run in Google Chrome DevTools for all pages to assess Performance
 
 During testing, a few browser-specific and formatting issues were discovered and resolved:
 
-- Safari Sizing Issue (Car Icons) - On Apple devices using Safari, the car silhouette icons inside the car tiles were overflowing their containers. This was not present in other browsers. The issue was resolved by adding .car-tile img rules in the custom CSS to control the image sizing explicitly.
-- Safari Alignment Issue (Arrow Icons) - On Safari, the down arrow icon at the bottom of each car tile was aligning left instead of centre. This was fixed by adding align-items: center; to the .car-tiles CSS rule to properly align content across all browsers.
+- Safari Sizing Issue (Car Icons) - On Apple devices using Safari, the car silhouette icons inside the car tiles were overflowing their containers. This was not present in other browsers. The issue was resolved by adding `.car-tile img` rules in the custom CSS to control the image sizing explicitly.
+- Safari Alignment Issue (Arrow Icons) - On Safari, the down arrow icon at the bottom of each car tile was aligning left instead of centre. This was fixed by adding `align-items: center;` to the `.car-tiles` CSS rule to properly align content across all browsers.
 - Hyphen Wrapping in Car Names - Some car names that included naming conventions such as *GT‑R* or *VR‑4* were breaking across lines at the hyphen. To improve legibility and preserve model names, normal hyphens were replaced with the non-breaking hyphen unicode character `&#8209;` to keep them as a single entity.
 
 ## Technologies
