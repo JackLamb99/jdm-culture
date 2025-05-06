@@ -1,6 +1,6 @@
 # JDM Culture
 
-**JDM Culture** is a website dedicated to exploring the rich culture of Japanese Domestic Market (JDM) cars. It introduces users to the origins and evolution of JDM, its impact on tuning and street racing culture, and the iconic vehicles and figures that have defined the scene. From detailed timelines to legendary names and media influences, the site offers an engaging overview for both newcomers and enthusiasts. View the live site <a href="https://jacklamb99.github.io/jdm-culture/" target="_blank">here</a>.
+**JDM Culture** is a website dedicated to exploring the rich culture of Japanese Domestic Market (JDM) cars. It introduces users to the origins and evolution of JDM, its impact on tuning and street racing culture, and the iconic vehicles and figures that have defined the scene. From detailed timelines to legendary names and media influences, the site offers an engaging overview for both newcomers and enthusiasts. View the live site [here](https://jacklamb99.github.io/jdm-culture/).
 
 ![Mockup](docs/images/mockup.png)
 
@@ -220,7 +220,7 @@ The colour scheme is inspired by vintage Japanese posters and car manuals, reinf
 - Contrast and Legibility: The design uses light-on-dark and dark-on-light combinations that meet WCAG contrast guidelines for accessibility.
 - Consistency: A limited but consistent palette is used across the site to reinforce a clear visual identity.
 - Emotional Impact:
-    - Red conveys excitement and speed — key elements of car culture.
+    - Red conveys excitement and speed, key elements of car culture.
     - Indigo represents technology and reliability.
     - Grey tones evoke modernity and balance the more vibrant accents.
 - Focus: Accent colours are strategically used for call-to-action buttons, hover states, and navigation to guide the user’s attention.
