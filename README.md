@@ -23,6 +23,7 @@
     - [Validation](#validation)
     - [Lighthouse](#lighthouse)
     - [Accessibility](#accessibility)
+    - [Bug Fixes](#bug-fixes)
 - [Technologies](#technologies)
 - [Deployment](#deployment)
     - [Version Control](#version-control)
@@ -217,13 +218,13 @@ The follwing wireframes guided the site’s structure and layout across desktop 
 
 The colour scheme is inspired by vintage Japanese posters and car manuals, reinforcing cultural authenticity. A deep indigo and vivid red establish strong visual hierarchy, helping users focus on key elements, while muted tones and the *linen* background colour reduce eye strain for longer reading sessions.
 
-- Contrast and Legibility: The design uses light-on-dark and dark-on-light combinations that meet WCAG contrast guidelines for accessibility.
-- Consistency: A limited but consistent palette is used across the site to reinforce a clear visual identity.
-- Emotional Impact:
+- Contrast and Legibility - The design uses light-on-dark and dark-on-light combinations that meet WCAG contrast guidelines for accessibility.
+- Consistency - A limited but consistent palette is used across the site to reinforce a clear visual identity.
+- Emotional Impact
     - Red conveys excitement and speed, key elements of car culture.
     - Indigo represents technology and reliability.
     - Grey tones evoke modernity and balance the more vibrant accents.
-- Focus: Accent colours are strategically used for call-to-action buttons, hover states, and navigation to guide the user’s attention.
+- Focus - Accent colours are strategically used for call-to-action buttons, hover states, and navigation to guide the user’s attention.
 
 ### Imagery
 
@@ -235,8 +236,8 @@ JDM Culture was created as part of an educational project with no commercial val
 
 The site uses two fonts from Google Fonts to support both clarity and aesthetic impact:
 
-- *Russo One* for headings: A bold, blocky display typeface that mirrors the strong, angular lines of classic JDM car design.
-- *Roboto* for body text: A clean, modern sans-serif font optimised for readability on screens of all sizes.
+- *Russo One* for headings - A bold, blocky display typeface that mirrors the strong, angular lines of classic JDM car design.
+- *Roboto* for body text - A clean, modern sans-serif font optimised for readability on screens of all sizes.
 
 This combination delivers contrast between structure and content, while maintaining a cohesive style across the site.
 
@@ -244,7 +245,7 @@ This combination delivers contrast between structure and content, while maintain
 
 UI choices were made to enhance usability without distracting from content:
 
-- Hover Effects: Interactive elements such as buttons, navigation links, and car tiles change shade on hover to give clear feedback.
+- Hover Effects - Interactive elements such as buttons, navigation links, and car tiles change shade on hover to give clear feedback.
 
     <details><summary>Navbar Hover Effect</summary>
 
@@ -276,9 +277,9 @@ UI choices were made to enhance usability without distracting from content:
 
     </details>
 
-- Car Modals: Car details open in Bootstrap-powered modals, allowing users to stay on the same page and view content without additional page loads.
-- Consistent Layouts: Spacing, font sizing, and padding remain consistent between sections across devices.
-- Responsive Grids: Flexible layouts adapt seamlessly from desktop to mobile, maintaining hierarchy and clarity.
+- Car Modals - Car details open in Bootstrap-powered modals, allowing users to stay on the same page and view content without additional page loads.
+- Consistent Layouts - Spacing, font sizing, and padding remain consistent between sections across devices.
+- Responsive Grids - Flexible layouts adapt seamlessly from desktop to mobile, maintaining hierarchy and clarity.
 
 ## Testing
 
@@ -559,6 +560,14 @@ Lighthouse was run in Google Chrome DevTools for all pages to assess Performance
 
 </details>
 
+### Bug Fixes
+
+During testing, a few browser-specific and formatting issues were discovered and resolved:
+
+- Safari Sizing Issue (Car Icons) - On Apple devices using Safari, the car silhouette icons inside the car tiles were overflowing their containers. This was not present in other browsers. The issue was resolved by adding .car-tile img rules in the custom CSS to control the image sizing explicitly.
+- Safari Alignment Issue (Arrow Icons) - On Safari, the down arrow icon at the bottom of each car tile was aligning left instead of centre. This was fixed by adding align-items: center; to the .car-tiles CSS rule to properly align content across all browsers.
+- Hyphen Wrapping in Car Names - Some car names that included naming conventions such as *GT‑R* or *VR‑4* were breaking across lines at the hyphen. To improve legibility and preserve model names, normal hyphens were replaced with the non-breaking hyphen unicode character `&#8209;` to keep them as a single entity.
+
 ## Technologies
 
 The following technologies were used in the creation of the website:
@@ -592,11 +601,11 @@ The following git commands were used throughout its creation to push code to the
 
 The site was deployed to GitHub Pages, the steps to deploy are as follows:
 
-1. In your GitHub repository, navigate to the Settings tab.
-2. In the left-hand menu, click on Pages.
-3. Under the Build and deployment section, select Deploy from a branch.
-4. In the Branch dropdown, choose main (or the appropriate branch) and leave the folder set to `/ (root)` if it appears.
-5. Click Save.
+1. In your GitHub repository, navigate to the *Settings* tab.
+2. In the left-hand menu, click on *Pages*.
+3. Under the *Build and deployment* section, select *Deploy from a branch*.
+4. In the *Branch* dropdown, choose *main* (or the appropriate branch) and leave the folder set to */ (root)* if it appears.
+5. Click *Save*.
 6. After a few moments, a live link to the deployed site will appear at the top of the page.
 <br>*Note: You may need to refresh the page to see the link after saving.*
 
@@ -606,7 +615,7 @@ The live link can be found here - https://jacklamb99.github.io/jdm-culture/
 
 1. Open the GitHub repository you want to clone.
 2. Click the green *Code* button under the repository name.
-3. Under the HTTPS tab, click the copy icon next to the repository URL.
+3. Under the *HTTPS* tab, click the copy icon next to the repository URL.
 4. Open your IDE or terminal.
 5. In the terminal, type the following command, replacing copied-url with the one you copied:
 `git clone copied-url`
